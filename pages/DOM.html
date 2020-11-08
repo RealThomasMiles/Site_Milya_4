@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Miles: Javascript</title>
+    <link rel=icon href="../favicon.ico">
+    <!--[if IE]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+<![endif]-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/flexbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Thomas Miles</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                <li><a href="../pages/drawing.html">Drawing</a></li>
+                <li><a href="../pages/flexbox.html">Flexbox</a></li>
+                <li><a href="../pages/javascript.html">Javascript</a></li>
+                <li><a href="../pages/function.html">Function</a></li>
+                <li class="active"><a href="../pages/DOM.html">DOM</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="content">
+            <p id="advice">All the action is happening there &rarr;</p>
+        </div>
+        <div class="rightAside">
+            <ol id="asideList"></ol>
+            <button onclick="getExpression()">Create</button>
+            <button onclick="recolor()"><strong>Recolor</strong></button>
+        </div>
+        <footer>
+            <p>©ThomasMiles, 2020</p>
+        </footer>
+    </div>
+    <script src="../scripts/latin.js"></script>
+</body>
+</html>
