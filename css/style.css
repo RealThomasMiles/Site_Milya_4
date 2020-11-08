@@ -10,7 +10,7 @@
 .rightAside {
   grid-area: rightAside;
   background-color: #e4e4e4;
-  padding: 0 15px;
+  padding: 0 20px;
   text-align: justify;
 }
 
@@ -22,36 +22,12 @@
   background-color: #d4d4d4;
 }
 
-/* Styling for the rightAside nav bar.
-
-.rightAside ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-  
-.rightAside li a {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 3em 2em;
-    text-decoration: none;
-    color: rgb(80, 80, 80);
-    text-align: left;
-    height: 8em;
-    width: 100%;
-}
-  
-.rightAside li a:hover {
-    background-color:rgb(80, 80, 80);
-    color: white;
-  } */
-
 .content {
   grid-area: content;
   position: relative;
-  min-height: 60vh;
+  min-height: 20vh;
   overflow: hidden;
-  padding: 0 25px 100px;
+  padding: 0 20px 100px;
 }
 
 header {
@@ -99,38 +75,6 @@ nav ul li a:hover {
   background-color: #111;
 }
 
-/* nav {
-  grid-area: nav;
-  background-color: rgb(80, 80, 80);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-  
-nav ul li {
-  float: left;
-}
-
-.active {
-  background-color: #5c5c5c;
-}
-  
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-  
-nav ul li a:hover {
-  background-color: #111;
-} */
-
 footer {
   min-height: 5vh;
   grid-area: footer;
@@ -150,17 +94,6 @@ footer {
   "footer";
 }
 
-/* .wrapper {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas:
-  "header header header header"
-  "nav nav nav nav"
-  "content content content rightAside"
-  "footer footer footer footer";
-} */
-
 .logo-row {
   position: absolute;
   bottom: 0;
@@ -172,4 +105,64 @@ footer {
 .logo {
   width: 100px;
   height: 100px;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "content content content rightAside"
+    "footer footer footer footer";
+  }
+
+  header {
+    text-align: left;
+    border-bottom: 0;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    margin: 15px 30px;
+  }
+
+  nav {
+    grid-area: nav;
+    background-color: rgb(80, 80, 80);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    float: left;
+    border-bottom: 0;
+  }
+
+  .active {
+    background-color: #5c5c5c;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #111;
+  }
+
+  .content {
+    min-height: 69vh;
+  }
 }
