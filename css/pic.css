@@ -1,0 +1,170 @@
+.drawing {
+    height: 200px;
+    width: 200px;
+    background: white;
+    position: relative;
+}
+
+.fluff::before, .fluff::after {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px 25px 0 0;
+    top: 40px;
+}
+
+.fluff::before {
+    transform: rotate(-45deg);
+    left: 35px;
+}
+
+.fluff::after {
+    transform: rotate(45deg);
+    right: 35px;
+}
+
+.mouth::before, .mouth::after {
+    position: absolute;
+    content: "";
+    background: rgb(125, 125, 125);
+    width: 18px;
+    height: 40px;
+    top: 105px;
+}
+
+.mouth::before {
+    border-radius: 0 25px 25px 0;
+    left: 97px;
+}
+
+.mouth::after {
+    border-radius: 25px 0 0 25px;
+    left: 85px;
+}
+
+.nose {
+    position: absolute;
+    background: rgb(100, 100, 100);
+    width: 50px;
+    height: 25px;
+    border-radius: 25px 25px 0 0;
+    left: 75px;
+    top: 105px;
+}
+
+.pupils::after, .pupils::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 75px;
+}
+
+.pupils::after {
+    left: 71px;
+}
+
+.pupils::before {
+    right: 71px;
+}
+
+.eyes::after, .eyes::before {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 70px;
+}
+
+.eyes::after {
+    left: 65px;
+}
+
+.eyes::before {
+    right: 65px;
+}
+
+.bow::after, .bow::before {
+    content: "";
+    position: absolute;
+    width: 0;
+        height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    bottom: 20px;
+}
+
+.bow::after {
+    border-right: 30px solid red;
+    left: 100px;
+}
+
+.bow::before {
+    border-left: 30px solid red;
+    left: 70px;
+}
+
+.head {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    left: 35px;
+    top: 35px;
+    background-image: radial-gradient(white, gray);
+}
+
+.ears-l {
+    transform: rotate(-45deg);
+}
+
+.ears-l::before, .ears-l::after {
+    position: absolute;
+    content: "";
+    background: gray;
+    height: 60px;
+    top: -28px;
+    background-image: linear-gradient(gray, white);
+}
+
+.ears-l::before {
+    width: 30px;
+    left: 3px;
+    border-radius: 30px 0 0 25px;
+}
+
+.ears-l::after {
+    width: 25px;
+    left: 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+.ears-r {
+    transform: rotate(45deg);
+}
+
+.ears-r::before, .ears-r::after {
+    position: absolute;
+    content: "";
+    height: 60px;  
+    bottom: -32px;
+    background-image: linear-gradient(gray, white);
+}
+
+.ears-r::before {
+    width: 30px;
+    right: 21px;
+    border-radius: 30px 0 0 25px;  
+}
+
+.ears-r::after {
+    width: 25px;
+    right: 3px;
+    border-radius: 0 25px 25px 0;
+}
