@@ -1,0 +1,83 @@
+.flexbox {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #271100;
+    background-image: url("./../img/coffee.png");    
+    transform-origin: 30% 100%;
+}
+
+.flexbox #tasty {
+    display: none;    
+    font-size: 2em;    
+    margin-top: 40%;
+    margin-left: -20%;
+    text-shadow: 3px 3px 4px black;
+}
+
+.flexbox #allIsGone {    
+    position: fixed;
+    display: none;    
+    font-size: 2em;    
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+#cap {
+    display: flex;
+    width: 129px;
+    height: 44px;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.flexbox:hover {    
+    background-image: url("./../img/glass1.png");
+    animation: swinging 20s infinite ease-in-out;
+}
+
+.flexbox:hover #cap {
+    transform: rotate(30deg);
+    margin-left: 55px;
+}
+
+.flexbox:hover #tasty {
+    display: flex;
+}
+
+.flexbox:active {
+    animation: none;
+    background-image: url("./../img/glass2.png");
+    filter: blur(1px);
+}
+
+.flexbox:active #cap {
+    transition: 0.3s ease-out;
+    transform: rotate(180deg);
+    margin-top: 70%;
+    margin-left: 75%;
+}
+
+.flexbox:active #tasty {
+    display: none;
+}
+
+.flexbox:active #allIsGone {
+    display: flex;
+}
+
+@keyframes swinging {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(5deg); }
+    15% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    35% { transform: rotate(-5deg); }
+    45% { transform: rotate(5deg); }
+    55% { transform: rotate(-5deg); }
+    65% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    85% { transform: rotate(5deg); }
+    95% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
