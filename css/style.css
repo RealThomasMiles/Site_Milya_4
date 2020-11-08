@@ -3,7 +3,6 @@
   font-size: 15px;
   line-height: 1.5;
   margin: 0;
-  /* min-width: 850px; */
   min-height: 100vh;
 }
 
@@ -107,6 +106,15 @@ footer {
   height: 100px;
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.portrait {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
   .wrapper {
     display: grid;
@@ -151,5 +159,10 @@ footer {
 
   .content {
     min-height: 69vh;
+  }
+
+  .portrait {
+    width: 400px;
+    text-align: initial;
   }
 }
