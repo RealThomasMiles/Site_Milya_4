@@ -107,7 +107,7 @@ footer {
   height: 100px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 980px) {
   .wrapper {
     display: grid;
     grid-template-rows: auto auto auto auto;
