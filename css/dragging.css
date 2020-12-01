@@ -1,0 +1,63 @@
+.dragging-area {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    border: 10px #e4e4e4 solid;
+    margin-top: 20px;
+}
+
+.dragging-object {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    /*border: 5px #dadada solid;*/
+    cursor: grab;
+}
+
+#dragging-object-cat {
+    left: 100px;
+    top: 50px;
+    background-image: url("../img/animals/cat.png");
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+}
+
+#dragging-object-cow {
+    left: 50px;
+    top: 250px;
+    background-image: url("../img/animals/cow.png");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+#dragging-object-tiger {
+    left: 450px;
+    top: 150px;
+    background-image: url("../img/animals/tiger.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+#dragging-object-rabbit {
+    left: 650px;
+    top: 100px;
+    background-image: url("../img/animals/rabbit.png");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+#dragging-object-goat {
+    left: 600px;
+    top: 300px;
+    background-image: url("../img/animals/goat.png");
+    background-repeat: no-repeat;
+    transform: rotate(270deg);
+}
+
+#dragging-object-snake {
+    left: 300px;
+    top: 350px;
+    background-image: url("../img/animals/snake.png");
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+}
