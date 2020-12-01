@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Miles: Dragging</title>
+    <link rel=icon href="../favicon.ico">
+    <!--[if IE]>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/dragging.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Thomas Miles</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                <li><a href="../pages/drawing.html">Drawing</a></li>
+                <li><a href="../pages/flexbox.html">Flexbox</a></li>
+                <li><a href="../pages/javascript.html">Javascript</a></li>
+                <li><a href="../pages/function.html">Function</a></li>
+                <li><a href="../pages/DOM.html">DOM</a></li>
+                <li class="active"><a href="../pages/dragging.html">Dragging</a></li>
+            </ul>
+        </nav>
+        <div class="rightAside">
+            <p>This is the sixth assignment. The task was to make a mini-game which utilizes drag and drop events.</p>
+        </div>
+        <div class="content" id="content">
+            <h1>Carnivores and Herbivores (Desktop only)</h1>
+            <p>
+                In this mini-game you have to categorize animals according to trophic criteria.<br>
+                Collect animals of the same category in one place (click on them so they are all standing upright) and at the same time make sure that herbivores are not dangerously close to carnivores.<br>
+                When you complete the task, the animals will give you a sign.
+            </p>
+            <div class="dragging-area" id="dragging-area-1" ondragenter="dragEnter(event)" ondrop="dragDrop(event)" ondragover="dragOver(event)" ondragleave="dragLeave(event)">
+                <div id="dragging-object-cat" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-cow" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-tiger" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-rabbit" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-goat" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-snake" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+            </div>
+            <div class="logo-row">
+                <img src="../img/logo.png" class="logo" alt="logo">
+            </div>
+        </div>
+        <footer>
+            <p>©ThomasMiles, 2020</p>
+        </footer>
+    </div>
+<script src="../scripts/dragTest.js"></script>
+<!--<script src="../scripts/dragging.js"></script>-->
+</body>
+</html>
