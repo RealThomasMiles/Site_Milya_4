@@ -33,9 +33,6 @@ function dragStart(e) {
 
 function dragEnter(e) {
     e.preventDefault();
-    requestAnimationFrame(() => {
-        draggable.style.visibility = 'hidden';
-    })
     return true;
 }
 
@@ -66,6 +63,11 @@ function dragOver(e) {
 
 function dragLeave(e) {
     e.preventDefault();
+    return false;
+}
+
+function dragEnd(e) {
+    e.preventDefault();
     requestAnimationFrame(() => {
         draggable.style.visibility = 'visible';
     })
@@ -93,7 +95,7 @@ function checkPos() {
     const carnivorePivot = animalPos.get(carnivoreList[0].id);
     for (let i = 1; i < carnivoreList.length; i++) {
         let currentPos = animalPos.get(carnivoreList[i].id);
-        if (Math.abs(carnivorePivot.left - currentPos.left) > 200 || Math.abs(carnivorePivot.top - currentPos.top) > 200) {
+        if (Math.abs(carnivorePivot.left - currentPos.left) > 150 || Math.abs(carnivorePivot.top - currentPos.top) > 150) {
             return false;
         }
     }
@@ -101,7 +103,7 @@ function checkPos() {
     const herbivorePivot = animalPos.get(herbivoreList[0].id);
     for (let i = 1; i < herbivoreList.length; i++) {
         let currentPos = animalPos.get(herbivoreList[i].id);
-        if (Math.abs(herbivorePivot.left - currentPos.left) > 200 || Math.abs(herbivorePivot.top - currentPos.top) > 200) {
+        if (Math.abs(herbivorePivot.left - currentPos.left) > 150 || Math.abs(herbivorePivot.top - currentPos.top) > 150) {
             return false;
         }
     }

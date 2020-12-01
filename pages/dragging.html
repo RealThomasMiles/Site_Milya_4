@@ -46,12 +46,12 @@
                 When you complete the task, the animals will give you a sign.
             </p>
             <div class="dragging-area" id="dragging-area-1" ondragenter="dragEnter(event)" ondrop="dragDrop(event)" ondragover="dragOver(event)" ondragleave="dragLeave(event)">
-                <div id="dragging-object-cat" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
-                <div id="dragging-object-cow" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
-                <div id="dragging-object-tiger" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
-                <div id="dragging-object-rabbit" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
-                <div id="dragging-object-goat" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
-                <div id="dragging-object-snake" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)"></div>
+                <div id="dragging-object-cat" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
+                <div id="dragging-object-cow" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
+                <div id="dragging-object-tiger" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
+                <div id="dragging-object-rabbit" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
+                <div id="dragging-object-goat" class="dragging-object herbivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
+                <div id="dragging-object-snake" class="dragging-object carnivore" draggable="true" ondragstart="dragStart(event)" onclick="handleClick(event)" ondragend="dragEnd(event)"></div>
             </div>
             <div class="logo-row">
                 <img src="../img/logo.png" class="logo" alt="logo">
